@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Iletisim">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ListView
+                android:id="@+id/iletisimList"
+                android:layout_width="match_parent"
+                android:layout_height="440dp"></ListView>
+
+
+            <TextView
+                android:id="@+id/iletisimFormText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iletisimList"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="İletişim"
+                android:textColor="#000000"
+                android:textSize="50dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/iletisimFormText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iletisimList"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/iletisimFormText1"
+                android:text=" Formu"
+                android:textColor="#000000"
+                android:textSize="50dp"></TextView>
+
+            <EditText
+                android:id="@+id/editAdSoyad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iletisimFormText1"
+                android:layout_margin="10dp"
+                android:background="@drawable/edittext_style"
+                android:hint="Ad Soyad*"
+                android:padding="10dp"></EditText>
+
+            <EditText
+                android:id="@+id/editTelefon"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editAdSoyad"
+                android:layout_margin="10dp"
+                android:background="@drawable/edittext_style"
+                android:hint="Telefon"
+                android:padding="10dp"></EditText>
+
+            <EditText
+                android:id="@+id/editEposta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editAdSoyad"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@id/editTelefon"
+                android:background="@drawable/edittext_style"
+                android:hint="E-Posta"
+                android:padding="10dp"></EditText>
+
+            <EditText
+                android:id="@+id/editKonu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTelefon"
+                android:layout_margin="10dp"
+                android:background="@drawable/edittext_style"
+                android:hint="Konu"
+                android:padding="10dp"></EditText>
+
+            <EditText
+                android:id="@+id/mesaj"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/editKonu"
+                android:layout_margin="10dp"
+                android:background="@drawable/edittext_style"
+                android:gravity="top"
+                android:hint="Mesaj*"
+                android:inputType="text|textMultiLine"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/gonderButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mesaj"
+                android:layout_margin="10dp"
+                android:background="@drawable/edittext_style"
+                android:onClick="goToSecond"
+                android:padding="10dp"
+                android:text="Gönder"></Button>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

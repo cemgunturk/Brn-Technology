@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WELCOME"
+        android:id="@+id/welcome"
+        android:gravity="center"
+        android:textSize="60dp"></TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/logo"></ImageView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/button_style"
+        android:textSize="20dp"
+        android:textColor="#4A148C"
+        android:layout_below="@+id/logo"
+        android:id="@+id/passButton"
+        android:onClick="goToSecond"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Giriş"
+        android:textAllCaps="false"
+        tools:ignore="OnClick">></Button>
+
+</RelativeLayout>
